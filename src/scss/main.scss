@@ -2,3 +2,17 @@
 @import "./helpers/variables";
 @import "./helpers/mixins";
 @import "./common";
+
+// header
+@import "./header/navigarion";
+
+// main
+@import "./main/home";
+@import "./main/features";
+@import "./main/browser";
+@import "./main/drop";
+@import "./main/template";
+@import "./main/pricing";
+
+// footer
+@import "./footer/footer";

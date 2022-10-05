@@ -1,0 +1,47 @@
+.browser{
+    padding-top: 264px;
+    padding-bottom: 276px;
+    position: relative;
+    &__img{
+        display: none;
+    }
+    &__title{
+        color: #0e1a35;
+        margin-bottom: 40px;
+    }
+    &__content{
+        margin-bottom: 41px;
+    }
+    &__list{
+        font-size: 22px;
+        line-height: 30px;
+        color: #5584ff;
+        &-item{
+            padding-left: 47px;
+            background-image: url(../images/browser-arrow.png);
+            background-repeat: no-repeat;
+            margin-bottom: 30px;
+        }
+    }
+}
+@media (min-width:768px){
+    .browser__wrapper{
+        width: 665px;
+    }
+    .browser__content{
+        width: 580px;
+    }
+}
+@media (max-width:1999px){
+    .browser__img{
+        width: 670px;
+    }
+}
+@media (min-width:1440px){
+    .browser__img{
+        display: block;
+        position: absolute;
+        right: 0px;
+        top: 220px;
+    }
+}

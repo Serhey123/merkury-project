@@ -1,0 +1,59 @@
+.drop{
+    padding-top: 217px;
+    padding-bottom: 196px;
+    background-image: url(../images/drop-bg.png);
+    background-size: cover;
+    position: relative;
+    &__img{
+        display: none;
+    }
+    &__title{
+        color: white;
+        margin-bottom: 51px;
+    }
+    &__content{
+
+        margin-bottom: 40px;
+    }
+    &__btn{
+        width: 35px;
+        height: 35px;
+        border: none;
+        background-color: transparent;
+        &-prev{
+            background-image: url(../images/drop-arrow-prev.png);
+        }
+        &-next{
+            background-image: url(../images/drop-arrow-next.png);
+        }
+        &-wrapper{
+            display: flex;
+            width: 90px;
+            justify-content: space-between;
+        }
+    }
+}
+@media (min-width: 768px){
+    .drop__img{
+        display: block;
+    }
+}
+@media (min-width:1440px){
+    .drop__content{
+        width: 512px;
+    }
+    .drop__container{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .drop__img{
+        position: absolute;
+        left: 15px;
+        top: 107px;
+    }
+}
+@media (max-width:1999px){
+    .drop__img{
+        width: 750px;
+    }
+}

@@ -1,0 +1,43 @@
+.home{
+    padding-top: 275px;
+    padding-bottom: 40px;
+    background-image: url(../images/home-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    &__title{
+        font-weight: 100;
+        font-size: 60px;
+        color: white;
+        margin-bottom: 18px;
+    }
+    &__subtitle{
+        font-size: 36px;
+        color: #8492af;
+        margin-bottom: 80px;
+    }
+    &__btn{
+        background-color: #5584ff;
+        color: white;
+        width: 204px;
+        height: 48px;
+        border: none;
+        border-radius: 50px;
+        font-size: 18px;
+    }
+    &__img{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+@media (max-width:767px){
+    .home__img{
+        display: none;
+    }
+}
+@media (min-width:768px){
+    .home{
+        padding-bottom: 580px;
+    }
+}

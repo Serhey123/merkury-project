@@ -1,0 +1,92 @@
+.features{
+    padding-top: 40px;
+    padding-bottom: 37px;
+    &__list{
+        &-item{
+            text-align: center;
+            &_workflow::before{
+                display: block;
+                content: "";
+                background-image: url(../images/workflow.png);
+                background-repeat: no-repeat;
+                margin: 0 auto;
+                width: 92px;
+                height: 92px;
+            }
+            &_analytics::before{
+                display: block;
+                content: "";
+                background-image: url(../images/analytics.png);
+                background-repeat: no-repeat;
+                margin: 0 auto;
+                width: 92px;
+                height: 92px;
+            }
+            &_deadlines::before{
+                display: block;
+                content: "";
+                background-image: url(../images/deadlines.png);
+                background-repeat: no-repeat;
+                margin: 0 auto;
+                width: 92px;
+                height: 92px;
+            }
+        }
+        &-title{
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 92px;
+            color: #0e1a35;
+        }
+        &-content{
+            font-size: 18px;
+            line-height: 30px;
+            color: #8492af;
+            margin-bottom: 50px;
+        }
+        &-btn{
+            font-weight: bold;
+            font-size: 18px;
+            color: #0e1a35;
+            width: 254px;
+            height: 52px;
+            border-style: solid;
+            border-width: 1px;
+            border-color: rgb(132, 146, 175);
+            background-color: transparent;
+            border-radius: 50px;
+        }
+    }
+}
+@media (max-width:767px){
+    .features__list-item:not(:last-child){
+        margin-bottom: 30px;
+    }
+}
+@media (min-width:768px){
+    .features{
+        padding-top: 260px;
+        &__list{
+            display: flex;
+            text-align: center;
+            justify-content: space-between;
+            &-item{
+                width: 207px;
+
+            }
+        }
+    }
+}
+@media (min-width:767px) and (max-width:1279px){
+    .features__list-title{
+        line-height: 30px;
+    }
+    .features__list-btn{
+        width: 120px;
+    }
+}
+@media (min-width:1280px){
+    .features__list-item{
+        width: 366px;
+    }
+}
