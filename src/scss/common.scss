@@ -45,9 +45,6 @@ html {
     @media screen and (min-width: $desktop-bp-min) {
       width: $desktop-w;
     }
-    @media screen and (min-width: 1550px) {
-      width: 1470px;
-    }
   }
   
   .visually-hidden:not(:focus):not(:active),
